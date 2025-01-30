@@ -10,6 +10,12 @@
 <h1>Nuevo Producto</h1>
 <form action="{{ route('products.store') }}" method="POST">
   @csrf
+  <label for="category_id">Categoría</label>
+  <select name="category_id" id="category_id" required>
+    <option value="">Seleccione una categoría</option>
+    @foreach ($categories as $category)
+      <option value="{{ $category->id }}">{{ $category->name }}</option>
+    @endforeach
   <label for="name">Nombre</label>
   <input type="text" name="name" id="name" required>
   <label for="description">Descripción</label>

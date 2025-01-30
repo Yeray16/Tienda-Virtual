@@ -15,6 +15,7 @@
       <th>ID</th>
       <th>Nombre</th>
       <th>Descripción</th>
+      <th>Nº Productos</th>
       <th>Acciones</th>
     </tr>
   </thead>
@@ -24,6 +25,7 @@
         <td>{{ $category->id }}</td>
         <td>{{ $category->name }}</td>
         <td>{{ $category->description }}</td>
+        <td>{{ $category->productCount() }}</td>
         <td>
           {{-- <a href="{{ route('categories.show', $category) }}"><button>Ver</button></a> --}}
           {{-- <form action="{{ route('categories.destroy', $category) }}" method="POST" style="display: inline;">
