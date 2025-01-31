@@ -27,12 +27,12 @@
         <td>{{ $category->description }}</td>
         <td>{{ $category->productCount() }}</td>
         <td>
-          {{-- <a href="{{ route('categories.show', $category) }}"><button>Ver</button></a> --}}
-          {{-- <form action="{{ route('categories.destroy', $category) }}" method="POST" style="display: inline;">
+          <a href="{{ route('categories.show', $category) }}"><button>Ver</button></a>
+          <form action="{{ route('categories.destroy', $category) }}" method="POST" style="display: inline;">
             @csrf
             @method('DELETE')
             <button type="submit">Eliminar</button>
-          </form> --}}
+          </form>
         </td>
       </tr>
     @endforeach
