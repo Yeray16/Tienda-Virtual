@@ -9,7 +9,11 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
+                    @auth
                     Bienvenido amego kiere un cegaro,  {{ Auth::user()->name }}!
+                    @else
+                    Bienvenido invitado se kiere cegarro son 7€ !
+                    @endauth
                 </div>
             </div>
         </div>
