@@ -9,23 +9,24 @@
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
               <div class="p-6 text-gray-900">
-                  <form action="{{ route('categories.store') }}" method="POST">
-                    @csrf
-                    <p>
+              <form action="{{ route('categories.store') }}" method="POST" class="form">
+                  @csrf
+                  <p>
                       <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" required>
-                    </p>
-                    <p>
+                      <input type="text" name="name" id="name" required>
+                  </p>
+                  <p>
                       <label for="description">Descripción</label>
-                    </p>
-                    <p>
+                  </p>
+                  <p>
                       <textarea name="description" id="description" required></textarea>
-                    </p>
-                    <p>
-                      <button type="submit">Guardar</button>
-                    </p>
-                   
-                  </form>
+                  </p>
+                  <p>
+                      <button type="submit" class="btn">Guardar</button>
+                  </p>
+              </form>
+
+
               </div>
           </div>
       </div>
